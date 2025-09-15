@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>中野 秀俊 | Web制作ポートフォリオ</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="中小企業・個人事業向けの軽量・高速なWebサイト制作。要件整理から公開・運用まで一気通貫で支援します。">
+  <link rel="stylesheet" href="./styles.css">
+  <!-- OGP（任意）-->
+  <meta property="og:title" content="中野 秀俊 | Web制作ポートフォリオ">
+  <meta property="og:description" content="軽量・高速なWebサイト制作。要件整理から公開・運用まで支援。">
+  <meta property="og:image" content="./images/hero.jpg">
+  <meta name="format-detection" content="telephone=no">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="./">Hidetoshi Nakano</a>
+      <nav class="nav">
+        <a href="#works">実績</a>
+        <a href="#services">サービス</a>
+        <a href="#about">プロフィール</a>
+        <a class="cta" href="#contact">お問い合わせ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>軽くて速い、伝わるサイトを。</h1>
+          <p>工場系システム・業務アプリの実務経験を活かし、要件整理→設計→制作→公開まで責任を持って対応します。</p>
+          <a class="button" href="#contact">無料相談する</a>
+        </div>
+        <div class="hero-media">
+          <img src="./images/hero.jpg" alt="制作中の画面イメージ">
+        </div>
+      </div>
+    </section>
+
+    <section id="works" class="section">
+      <div class="container">
+        <h2>実績（仮）</h2>
+        <p class="muted">まずはダミーでOK。スクリーンショットと一言キャプションを入れておきます。</p>
+        <div class="grid">
+          <figure class="card">
+            <img src="./images/work-01.jpg" alt="案件Aのスクリーンショット">
+            <figcaption>
+              <strong>案件A</strong><br>
+              課題：更新コストを下げたい → 解決：静的化＋フォーム外部化で高速＆低運用
+              <div class="tags">HTML/CSS | Cloudflare Pages</div>
+            </figcaption>
+          </figure>
+          <!-- 追加したくなったら同じ要素を増やす -->
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <h2>提供サービス</h2>
+        <ul class="list">
+          <li><strong>小規模サイト制作</strong>（1〜5ページ / 目安2〜3週間）</li>
+          <li><strong>既存サイトの高速化・軽量化</strong></li>
+          <li><strong>お問い合わせ導線の最適化</strong>（外部フォーム活用 等）</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>プロフィール</h2>
+        <p>製造業の現場システム・Web制作・業務アプリ開発の経験あり。正確さと運用のしやすさを重視します。</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>お問い合わせ</h2>
+        <!-- 後で Formspree の action に差し替え -->
+        <form action="#" method="post" class="contact-form">
+          <label>お名前<input type="text" name="name" required></label>
+          <label>メール<input type="email" name="email" required></label>
+          <label>ご用件<textarea name="message" rows="6" required></textarea></label>
+          <button class="button" type="submit" disabled>準備中（Formspree設定後に有効化）</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="y"></span> Hidetoshi Nakano</small>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -2,20 +2,21 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <title>中野 秀俊 | Web制作ポートフォリオ | branch main</title>
+  <title>中野 秀俊 | Web制作ポートフォリオ</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="中小企業・個人事業向けの軽量・高速なWebサイト制作。要件整理から公開・運用まで一気通貫で支援します。">
   <link rel="stylesheet" href="./styles.css">
   <!-- OGP（任意）-->
   <meta property="og:title" content="中野 秀俊 | Web制作ポートフォリオ">
   <meta property="og:description" content="軽量・高速なWebサイト制作。要件整理から公開・運用まで支援。">
-  <meta property="og:image" content="./images/hero.jpg">
+  <meta property="og:image" content="./images/hero.png">
   <meta name="format-detection" content="telephone=no">
 </head>
 <body>
   <header class="site-header">
     <div class="container">
-      <a class="logo" href="./">Hidetoshi Nakano</a>
+      <a class="logo" href="./">Hidetoshi Nakano's Portfolio</a>
+        <font color="red">(テスト掲載です。未だ受注はできません。)</font>
       <nav class="nav">
         <a href="#works">実績</a>
         <a href="#services">サービス</a>
@@ -34,20 +35,36 @@
           <a class="button" href="#contact">無料相談する</a>
         </div>
         <div class="hero-media">
-          <img src="./images/hero.jpg" alt="制作中の画面イメージ">
+          <img src="./images/hero.png" alt="制作中の画面イメージ">
         </div>
       </div>
     </section>
 
     <section id="works" class="section">
       <div class="container">
-        <h2>実績（仮）</h2>
-        <p class="muted">まずはダミーでOK。スクリーンショットと一言キャプションを入れておきます。</p>
+        <h2>実績</h2>
+        <p class="muted">これまで制作したWebサイトです。また、当サイトも自ら制作していますので実績の一つとしてご覧ください。</p>
         <div class="grid">
           <figure class="card">
-            <img src="./images/work-01.jpg" alt="案件Aのスクリーンショット">
+            <img src="./images/work-01.png" alt="案件Aのスクリーンショット">
             <figcaption>
-              <strong>案件A</strong><br>
+              <strong>案件A カフェ(架空)</strong><br>
+              課題：更新コストを下げたい → 解決：静的化＋フォーム外部化で高速＆低運用
+              <div class="tags">HTML/CSS | Cloudflare Pages</div>
+            </figcaption>
+          </figure>
+          <figure class="card">
+            <img src="./images/work-02.png" alt="案件Aのスクリーンショット">
+            <figcaption>
+              <strong>案件B 歯科医院(架空)</strong><br>
+              課題：更新コストを下げたい → 解決：静的化＋フォーム外部化で高速＆低運用
+              <div class="tags">HTML/CSS | Cloudflare Pages</div>
+            </figcaption>
+          </figure>
+          <figure class="card">
+            <img src="./images/work-03.png" alt="案件Aのスクリーンショット">
+            <figcaption>
+              <strong>案件C リフォーム業者(架空)</strong><br>
               課題：更新コストを下げたい → 解決：静的化＋フォーム外部化で高速＆低運用
               <div class="tags">HTML/CSS | Cloudflare Pages</div>
             </figcaption>
@@ -70,8 +87,13 @@
 
     <section id="about" class="section">
       <div class="container">
-        <h2>プロフィール</h2>
-        <p>製造業の現場システム・Web制作・業務アプリ開発の経験あり。正確さと運用のしやすさを重視します。</p>
+        <div class="profile-text">
+          <h2>プロフィール</h2>
+          <p>製造業の現場システム・Web制作・業務アプリ開発の経験あり。正確さと運用のしやすさを重視します。</p>
+        </div>
+        <div class="profile-media">
+          <img src="./images/profile-01.png" alt="中野近影">
+        </div>
       </div>
     </section>
 
